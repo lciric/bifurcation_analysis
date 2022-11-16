@@ -1,0 +1,49 @@
+function [g_L,E_L_e,E_L_i,C_m,E_e,E_i,Q_e,Q_i,tau_e,tau_i,tau_w_e,b_e,N_tot,p_connect,p_exc_AB,p_exc_BA,p_inh_AB,p_inh_BA,g,T,external_input_E_E,external_input_E_I,P_e_0,P_e_1,P_e_2,P_e_3,P_e_4,P_e_5,P_e_6,P_e_7,P_e_8,P_e_9,P_i_0,P_i_1,P_i_2,P_i_3,P_i_4,P_i_5,P_i_6,P_i_7,P_i_8,P_i_9] = load_parameters_Lazar(path)
+%function [g_L,E_L_e,E_L_i,C_m,E_e,E_i,Q_e,Q_i,tau_e,tau_i,tau_w_e,b_e,N_tot,p_connect,g,T,external_input_E_E,external_input_E_I,P_e_0,P_e_1,P_e_2,P_e_3,P_e_4,P_e_5,P_e_6,P_e_7,P_e_8,P_e_9,P_i_0,P_i_1,P_i_2,P_i_3,P_i_4,P_i_5,P_i_6,P_i_7,P_i_8,P_i_9] = load_parameters_Lazar(path)
+
+    %load(path,"parameter");
+    load(path,"parameter_test_Lazar");
+    g_L=parameter_test_Lazar.g_L;
+    E_L_e=parameter_test_Lazar.E_L_e;
+    E_L_i=parameter_test_Lazar.E_L_i;
+    C_m=parameter_test_Lazar.C_m;
+    E_e=parameter_test_Lazar.E_ex;
+    E_i=parameter_test_Lazar.E_in; 
+    Q_e=parameter_test_Lazar.Q_e;
+    Q_i=parameter_test_Lazar.Q_i;
+    %tau_e=parameter.tau_syn_ex;
+    tau_e=parameter_test_Lazar.tau_syn_ex;
+    tau_i=parameter_test_Lazar.tau_syn_in;
+    tau_w_e=parameter_test_Lazar.tau_w_e;
+    b_e=parameter_test_Lazar.b_e;
+    N_tot=parameter_test_Lazar.N_tot;
+    p_connect=parameter_test_Lazar.p_connect;
+    p_exc_AB=parameter_test_Lazar.p_exc_AB;
+    p_exc_BA=parameter_test_Lazar.p_exc_BA;
+    p_inh_AB=parameter_test_Lazar.p_inh_AB;
+    p_inh_BA=parameter_test_Lazar.p_inh_BA;
+    g=parameter_test_Lazar.g;
+    T=parameter_test_Lazar.T;
+    external_input_E_E=parameter_test_Lazar.external_input_E_E;
+    external_input_E_I=parameter_test_Lazar.external_input_E_I;
+    P_e_0=parameter_test_Lazar.P_e_0;
+    P_e_1=parameter_test_Lazar.P_e_1;
+    P_e_2=parameter_test_Lazar.P_e_2;
+    P_e_3=parameter_test_Lazar.P_e_3;
+    P_e_4=parameter_test_Lazar.P_e_4;
+    P_e_5=parameter_test_Lazar.P_e_5;
+    P_e_6=parameter_test_Lazar.P_e_6;
+    P_e_7=parameter_test_Lazar.P_e_7;
+    P_e_8=parameter_test_Lazar.P_e_8;
+    P_e_9=parameter_test_Lazar.P_e_9;
+    P_i_0=parameter_test_Lazar.P_i_0;
+    P_i_1=parameter_test_Lazar.P_i_1;
+    P_i_2=parameter_test_Lazar.P_i_2;
+    P_i_3=parameter_test_Lazar.P_i_3;
+    P_i_4=parameter_test_Lazar.P_i_4;
+    P_i_5=parameter_test_Lazar.P_i_5;
+    P_i_6=parameter_test_Lazar.P_i_6;
+    P_i_7=parameter_test_Lazar.P_i_7;
+    P_i_8=parameter_test_Lazar.P_i_8;
+    P_i_9=parameter_test_Lazar.P_i_9;
+end
